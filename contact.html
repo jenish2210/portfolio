@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact</title>
+  <link rel="shortcut icon" href="tit.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+     <link href='https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/3.0.3/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body-about">
+
+
+  <nav class="navbar">
+  <a href="index.html" class="logo">Portfolio<span>.</span></a>
+  <div class="menu-toggle">
+    <i class='bx bx-menu'></i>
+  </div>
+  <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+  <main class="container">
+    <header>
+      <div class="hero">
+        <h1>Get In Touch</h1>
+        <p>I'd love to hear from you! Let's connect and build something amazing together.</p>
+      </div>
+    </header>
+
+    <div class="grid contact-info">
+      <section class=" cont-sec">
+        <hgroup >
+          <h2>Contact Information</h2>
+          <h3>Reach out directly or send a message below</h3>
+        </hgroup>
+
+        
+        <p><strong>Email:</strong> jenisonjenish22@gmail.com</p>
+        <p><strong>Whatsapp:</strong>+91 9043949382</p>
+        <p><strong>Location:</strong> Chennai, India</p>
+        <div class="sci">
+                 <a href="https://github.com/jenish2210" title="Github"><i class='bx bxl-github' ></i></a>
+                 <a href="https://www.linkedin.com/in/jenison-v-519299287/" title="Linkedin"><i class='bx bxl-linkedin-square' ></i></a>
+                 <a href="mailto: jenisonjenish22@gmail.com"  title=" Mail"><i class='bxrds  bx-at'    style="--bx-duotone-primary-color:#ffffff;" > </i></a>
+                 <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+             </div>
+        <figure>
+          <img src="Hacking aethetic wallpaper.jpg" alt="img" />
+
+        </figure>
+      </section>
+
+      <section>
+        <hgroup class=" hg">
+          <h2>Send Me a Message</h2>
+          <h3>Fill out the form and I’ll get back to you soon</h3>
+        </hgroup>
+        <form id="contactForm" class="grid">
+          <input type="text" id="name" name="name" placeholder="Your Name" aria-label="Name" required>
+          <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Email" required>
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" aria-label="Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  
+  <section aria-label="Subscribe example">
+    <div class="container">
+      <article>
+        <hgroup>
+          <h2>Stay Updated</h2>
+          <h3>Subscribe for new portfolio updates</h3>
+        </hgroup>
+        <form class="grid">
+          <input type="text" id="firstname" name="firstname" placeholder="First Name" aria-label="First Name" required>
+          <input type="email" id="emailSub" name="emailSub" placeholder="Email" aria-label="Email" required>
+          <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+        </form>
+      </article>
+    </div>
+  </section>
+
+
+  <footer class="container">
+    <small><a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a></small>
+  </footer>
+
+ 
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if (name && email && message) {
+        alert('Thank you, ' + name + '! Your message has been sent successfully.');
+        this.reset();
+      } else {
+        alert('Please fill out all fields.');
+      }
+    });
+  </script>
+
+  <script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.navbar ul');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+
+  // Optional: Close the menu after clicking a link
+  document.querySelectorAll('.navbar ul li a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('show');
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+    <link rel="shortcut icon" href="tit.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link href='https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/3.0.3/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+</head>
+
+<body class="body-services">
+    <nav class="navbar">
+  <a href="index.html" class="logo">Portfolio<span>.</span></a>
+  <div class="menu-toggle">
+    <i class='bx bx-menu'></i>
+  </div>
+  <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+    <section class="service">
+        <h3 class="heading">My <span>Project</span>.</h3>
+        <div class="services-container">
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bxrds  bx-groceries'    style="--bx-duotone-primary-color:#ffffff;"></i>   
+                    <a href="#"><i class='bx bx-arrow-back' ></i></a>
+                </div>
+                <h3>E-commerce</h3>
+                <p>A full-featured Django-based online store with product catalog, shopping cart, user login, and order tracking. Focused on delivering a seamless shopping experience with a responsive and intuitive interface.</p>
+            </div>
+
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bxrds  bx-article'    style="--bx-duotone-primary-color:#ffffff;"></i> 
+                    <a href="#"><i class='bx bx-arrow-back' ></i></a>
+                </div>
+                <h3>Blog Management System</h3>
+                <p>A full-stack blogging platform built with Python, Django, and MySQL, featuring CRUD operations, user authentication, category tagging, and search functionality for easy and engaging content management.</p>
+            </div>
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bxrds  bx-robot'    style="--bx-duotone-primary-color:#ffffff;"></i> 
+                    <a href="#"><i class='bx bx-arrow-back' ></i></a>
+                </div>
+                <h3>CareMate – AI Chatbot Assistant</h3>
+                <p>An intelligent AI-powered chatbot built with Python, Django, and speech technologies to assist users through voice and text communication. It features text-to-speech, speech-to-text, emergency alerts, and task management, designed to help people — especially those with disabilities — manage daily activities effortlessly and safely.</p>
+            </div>
+
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bxds  bx-user-id-card'    style="--bx-duotone-primary-color:#ffffff;"></i> 
+                    <a href="#"><i class='bx bx-arrow-back' ></i></a>
+                </div>
+                <h3>Responsive Portfolio Website</h3>
+                <p>A clean and mobile-friendly personal website built with HTML, CSS, JavaScript, and Bootstrap, designed to showcase my projects, skills, and contact details with smooth navigation and modern design.</p>
+            </div>
+
+            <!-- 
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx bx-slideshow' ></i>
+                    <a href="#"><i class='bx bx-arrow-back' ></i></a>
+                </div>
+                <h3>SEO</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, numquam?</p>            </div>
+
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx bx-camera' ></i>
+                    <a href="#"><i class='bx bx-arrow-back' ></i></a>
+                    <h3>Photography</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, numquam?</p>            </div>
+                </div> -->
+        </div>
+        
+    </section>
+    <script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.navbar ul');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+
+  // Optional: Close the menu after clicking a link
+  document.querySelectorAll('.navbar ul li a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('show');
+    });
+  });
+</script>
+</body>
