@@ -799,12 +799,7 @@ a{
   fill: #fff !important;
 }
 
-/* If a parent has lowered opacity, that would still dim children.
-   Use an alternative background instead of setting opacity on the whole container. */
-.body-about .contact-info .cont-sec {
-  background-color: rgba(0,0,0,0.35); /* if you want translucent bg, but avoid parent opacity */
-  opacity: 1 !important;
-}
+
 
 /* Optionally increase contrast for paragraph text on very small screens */
 @media (max-width: 480px) {
