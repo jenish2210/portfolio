@@ -19,6 +19,21 @@ a{
     text-decoration: none;
 }
 
+.nav-links {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+}
+.nav-links.active {
+  display: flex;
+}
+
 .navbar {
     position: fixed;
     background-color: #1f242d;
