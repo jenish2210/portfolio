@@ -765,3 +765,54 @@ a{
   }
 }
 
+/* ---------- CONTACT PAGE ONLY: place in style.css ---------- */
+
+/* Remove/override any inherited low-contrast color only inside contact section */
+.body-about .contact-info,
+.body-about .contact-info * {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important; /* ios/safari */
+  text-decoration-color: #ffffff !important;
+}
+
+/* Stronger weights for headings so they pop on mobile */
+.body-about .contact-info h1,
+.body-about .contact-info h2,
+.body-about .contact-info h3,
+.body-about .contact-info hgroup h2,
+.body-about .contact-info hgroup h3 {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* Links / social icons */
+.body-about .contact-info a,
+.body-about .contact-info .sci a {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Boxicons sometimes use currentColor; this ensures the icons are white */
+.body-about .contact-info i,
+.body-about .contact-info svg {
+  color: #fff !important;
+  fill: #fff !important;
+}
+
+/* If a parent has lowered opacity, that would still dim children.
+   Use an alternative background instead of setting opacity on the whole container. */
+.body-about .contact-info .cont-sec {
+  background-color: rgba(0,0,0,0.35); /* if you want translucent bg, but avoid parent opacity */
+  opacity: 1 !important;
+}
+
+/* Optionally increase contrast for paragraph text on very small screens */
+@media (max-width: 480px) {
+  .body-about .contact-info p,
+  .body-about .contact-info li,
+  .body-about .contact-info span {
+    color: #ffffff !important;
+    opacity: 1 !important;
+  }
+}
+
