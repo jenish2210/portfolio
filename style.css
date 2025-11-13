@@ -811,3 +811,30 @@ a{
   }
 }
 
+/* Stay Updated section background */
+section[aria-label="Subscribe example"] article {
+    background-color: #111827 !important;  /* Dark background */
+    color: #ffffff !important;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+/* Text inside the box */
+section[aria-label="Subscribe example"] h2,
+section[aria-label="Subscribe example"] h3,
+section[aria-label="Subscribe example"] label,
+section[aria-label="Subscribe example"] p {
+    color: #ffffff !important;
+}
+
+/* Input fields text & placeholders */
+section[aria-label="Subscribe example"] input {
+    color: #ffffff !important;
+    background-color: #1f2937 !important;
+    border: 1px solid #4ade80 !important;
+}
+
+section[aria-label="Subscribe example"] input::placeholder {
+    color: #bfbfbf !important;
+}
+
