@@ -811,66 +811,12 @@ a{
   }
 }
 
-/* Apply to both contact form and subscribe box inputs */
-.body-about .contact-info input,
-.body-about .contact-info textarea,
-section[aria-label="Subscribe example"] input,
-section[aria-label="Subscribe example"] textarea {
-  box-sizing: border-box;          /* ensure padding/border included in size */
-  background-color: rgba(255,255,255,0.02);
-  color: #fff;
-  border: 1px solid rgba(124,240,61,0.15); /* subtle thin green */
-  border-radius: 8px;
-  padding: 14px 18px;
-  transition: box-shadow .18s ease, border-color .18s ease;
-  resize: vertical;                /* keep arrow (resizer) enabled, vertical only */
-  overflow: auto;
+/* Stay Updated Section Outer Border */
+section[aria-label="Subscribe example"] article {
+    background-color: rgba(255, 255, 255, 0.03); /* same light BG like contact box */
+    border: 2px solid #7cf03d;   /* green border */
+    border-radius: 16px;
+    padding: 2rem;
+    color: #ffffff;
+    backdrop-filter: blur(4px);
 }
-
-/* Placeholder color */
-.body-about .contact-info input::placeholder,
-.body-about .contact-info textarea::placeholder,
-section[aria-label="Subscribe example"] input::placeholder,
-section[aria-label="Subscribe example"] textarea::placeholder {
-  color: #bdbdbd;
-}
-
-/* Focus style: use inset box-shadow so element size doesn't change */
-.body-about .contact-info input:focus,
-.body-about .contact-info textarea:focus,
-section[aria-label="Subscribe example"] input:focus,
-section[aria-label="Subscribe example"] textarea:focus {
-  outline: none;
-  border-color: rgba(124,240,61,0.28);            /* keep subtle border color */
-  box-shadow: inset 0 0 0 2px #7cf03d;            /* bright green inner stroke */
-}
-
-/* Make sure the textarea resizer is visually on top and inside */
-textarea {
-  /* keep transform/position default so resizer sits inside the border box */
-  -webkit-appearance: textarea;
-  /* reduce chance of the resizer appearing outside when rounded corners exist */
-  border-radius: 8px;
-}
-
-/* Optional: style the native resizer a little (webkit browsers) */
-textarea::-webkit-resizer {
-  background: transparent;
-  border-left: 1px solid rgba(255,255,255,0.02);
-  border-top-left-radius: 0;
-}
-
-/* If you also want the green thin outline visible even when not focused
-   but only as a thin stroke (like screenshot), uncomment this: */
-/*
-.body-about .contact-info input,
-.body-about .contact-info textarea,
-section[aria-label="Subscribe example"] input,
-section[aria-label="Subscribe example"] textarea {
-  box-shadow: inset 0 0 0 1px rgba(124,240,61,0.22);
-}
-*/
-
-
-
-
