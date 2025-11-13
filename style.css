@@ -811,11 +811,12 @@ a{
   }
 }
 
-/* Match Stay Updated box background with Contact Information section */
 section[aria-label="Subscribe example"] article {
-    background-color: rgba(255, 255, 255, 0.05);  /* same light background */
+    background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(3px);
     border-radius: 12px;
+
+    border: 2px solid #4ade80;   /* green border */
     padding: 2rem;
     color: #fff !important;
 }
