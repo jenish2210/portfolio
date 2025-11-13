@@ -815,6 +815,7 @@ a{
 section[aria-label="Subscribe example"] article {
     background-color: rgba(255, 255, 255, 0.03); /* same light BG like contact box */
     border: 2px solid #7cf03d;   /* green border */
+    box-shadow: 0 0 15px rgba(124,240,61,0.3);
     border-radius: 16px;
     padding: 2rem;
     color: #ffffff;
