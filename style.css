@@ -811,30 +811,30 @@ a{
   }
 }
 
-/* Stay Updated section background */
+/* Match Stay Updated box background with Contact Information section */
 section[aria-label="Subscribe example"] article {
-    background-color: #111827 !important;  /* Dark background */
-    color: #ffffff !important;
-    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.05);  /* same light background */
+    backdrop-filter: blur(3px);
     border-radius: 12px;
+    padding: 2rem;
+    color: #fff !important;
 }
 
-/* Text inside the box */
+/* Headings inside */
 section[aria-label="Subscribe example"] h2,
-section[aria-label="Subscribe example"] h3,
-section[aria-label="Subscribe example"] label,
-section[aria-label="Subscribe example"] p {
+section[aria-label="Subscribe example"] h3 {
     color: #ffffff !important;
 }
 
-/* Input fields text & placeholders */
+/* Input fields inside Stay Updated section */
 section[aria-label="Subscribe example"] input {
-    color: #ffffff !important;
-    background-color: #1f2937 !important;
-    border: 1px solid #4ade80 !important;
+    background-color: rgba(255,255,255,0.08);
+    color: #fff !important;
+    border: 1px solid #4ade80;  /* green border like your theme */
 }
 
 section[aria-label="Subscribe example"] input::placeholder {
-    color: #bfbfbf !important;
+    color: #d1d1d1 !important;
 }
+
 
