@@ -811,15 +811,20 @@ a{
   }
 }
 
-section[aria-label="Subscribe example"] article {
-    background-color: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(3px);
-    border-radius: 12px;
-
-    border: 2px solid #4ade80;   /* green border */
-    padding: 2rem;
-    color: #fff !important;
+/* Default input style (no border) */
+section[aria-label="Subscribe example"] input {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid transparent;   /* hidden before click */
+    color: #ffffff;
+    transition: 0.3s ease;
 }
+
+/* Green border on focus (click) */
+section[aria-label="Subscribe example"] input:focus {
+    border: 2px solid #7cf03d;   /* your custom color */
+    outline: none;
+}
+
 
 
 
